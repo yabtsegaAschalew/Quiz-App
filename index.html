@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizz App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Quiz</h1>
+  
+  <div class="container">
+    <div class="track-questions">
+      <h2>Questions</h2>
+      <a href="#question1"><button id="reference1">1</button></a>
+      <a href="#question2"><button id="reference2">2</button></a>
+      <a href="#question3"><button id="reference3">3</button></a>
+      <a href="#question4"><button id="reference4">4</button></a>
+      <a href="#question5"><button id="reference5">5</button></a>
+      
+    </div>
+    <div class="questions">
+      <div class="question">
+        <h2>Q1. What is the capital of India?</h2>
+        <form action="">
+          <div class="options">
+            <a id="question1"></a>
+            <div class="option">
+              <input type="radio" name="question1" id="option1" value="New Delhi">
+              <label for="option1">New Delhi</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question1" id="option2" value="Mumbai">
+              <label for="option2">Mumbai</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question1" id="option3" value="Kolkata">
+              <label for="option3">Kolkata</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question1" id="option4" value="Chennai">
+              <label for="option4">Chennai</label>
+            </div>
+            <div class="buttons">
+              <input type="reset" value="Reset">
+              <button class="btnSubmut" id="q1" onclick="evaluateQuiz();">Submit</button>
+              
+            </div>
+        </form>
+      </div>
+    </div>
+        
+        
+      <div class="question">
+        <a id="question2"></a>
+        <h2>Q2. What is the capital of Australia?</h2>
+        <form action="">
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="question2" id="option5" value="Sydney">
+              <label for="option5">Sydney</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question2" id="option6" value="Melbourne">
+              <label for="option6">Melbourne</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question2" id="option7" value="Canberra">
+              <label for="option7">Canberra</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question2" id="option8" value="Perth">
+              <label for="option8">Perth</label>
+            </div>
+            <div class="buttons">
+              <input type="reset" value="Reset">
+              <button class="btnSubmut" id="q2" onclick="evaluateQuiz();">Submit</button>
+              
+            </div>
+          </div>
+        </form>
+  
+      </div>
+
+      <div class="question">
+        <a id="question3"></a>
+        <h2>Q3. What is the capital of Japan?</h2>
+        <form action="">
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="question3" id="option9" value="Osaka">
+              <label for="option9">Osaka</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question3" id="option10" value="Tokyo">
+              <label for="option10">Tokyo</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question3" id="option11" value="Kyoto">
+              <label for="option11">Kyoto</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question3" id="option12" value="Hiroshima">
+              <label for="option12">Hiroshima</label>
+            </div>
+            <div class="buttons">
+              <input type="reset" value="Reset">
+              <button class="btnSubmut" id="q3" onclick="evaluateQuiz();">Submit</button>
+              
+            </div>
+          </div>
+        </form>
+        
+      </div>
+      
+      <div class="question">
+        <a id="question4"></a>
+        <h2>Q4. What is the capital of France?</h2>
+        <form action="">
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="question4" id="option13" value="Lyon">
+              <label for="option13">Lyon</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question4" id="option14" value="Marseille">
+              <label for="option14">Marseille</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question4" id="option15" value="Nice">
+              <label for="option15">Nice</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question4" id="option16" value="Paris">
+              <label for="option16">Paris</label>
+            </div>
+            <div class="buttons">
+              <input type="reset" value="Reset">
+              <button class="btnSubmut" id="q4" onclick="evaluateQuiz();">Submit</button>
+              
+            </div>
+          </div>
+        </form>
+        
+      </div>
+      <div class="question">
+        <a id="question5"></a>
+        <h2>Q5. What is the capital of Russia?</h2>
+        <form action="">
+          <div class="options">
+            <div class="option">
+              <input type="radio" name="question5" id="option17" value="St. Petersburg">
+              <label for="option17">St. Petersburg</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question5" id="option18" value="Moscow">
+              <label for="option18">Moscow</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question5" id="option19" value="Novosibirsk">
+              <label for="option19">Novosibirsk</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="question5" id="option20" value="Yekaterinburg">
+              <label for="option20">Yekaterinburg</label>
+            </div>
+            <div class="buttons">
+              <input type="reset" value="Reset" >
+              <button class="btnSubmut" id="q5" onclick="evaluateQuiz();">Submit</button>
+              
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="button">
+        <button onclick="quizResult();">Finish</button>
+      </div>
+    </div>
+    
+  </div>
+  <script src="js/script3.js"></script>
+</body>
+</html>
