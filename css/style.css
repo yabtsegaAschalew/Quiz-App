@@ -104,7 +104,7 @@ button:active{
 .unanswered{
   background-color: rgb(190, 120, 132);
 }
-@media(min-width:480px){
+@media(max-width:480px){
   .track-questions h2{
     font-size: 12px;
   }
